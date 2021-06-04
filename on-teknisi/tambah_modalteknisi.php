@@ -9,7 +9,7 @@
                 <div class="modal-body">
 				<div class="container-fluid">
 				<form method="POST" action="tambah_teknisi.php">
-				
+					
 					<div style="height:10px;"></div>
 					<div class="row">
 						<div class="col-lg-2">
@@ -22,7 +22,7 @@
 					<div style="height:10px;"></div>
 					<div class="row">
 						<div class="col-lg-2">
-							<label class="control-label" style="position:relative; top:7px;">Telpon:</label>
+							<label class="control-label" style="position:relative; top:7px;">Alamat:</label>
 						</div>
 						<div class="col-lg-10">
 							<input type="text" class="form-control" name="telpon_teknisi">

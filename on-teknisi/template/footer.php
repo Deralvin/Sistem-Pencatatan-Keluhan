@@ -2,7 +2,7 @@
       </div><!-- /.content-wrapper -->
 <footer class="main-footer">
     <div class="pull-right hidden-xs">
-      <b>By</b>Freeplace
+      <b>By</b> Freeplace
     </div>
     <strong><a href="#">Sipelupa</a>.</strong> 
     reserved.

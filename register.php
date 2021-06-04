@@ -1,13 +1,3 @@
-<?php
-session_start();
-
-if ( isset($_SESSION['user_login']) && $_SESSION['user_login'] != '' ) {
-    $halaman = $_SESSION['user_login'];
-
-    header('location:on-'. $halaman);
-    exit();
-}
-?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -46,9 +36,14 @@ if ( isset($_SESSION['user_login']) && $_SESSION['user_login'] != '' ) {
               <div class="panel-body text-center">
                   <h1 class="atomic-symbol">Fre</h1>
                   <p class="atomic-mass">14.072110</p>
-                  <p class="element-name">Freeplace</p>
+                  <p class="element-name">Register</p>
 
                   <i class="icons icon-arrow-down"></i>
+                  <div class="form-group form-animate-text" style="margin-top:40px !important;">
+                    <input type="text" name="nama" class="form-text" required>
+                    <span class="bar"></span>
+                    <label>Nama</label>
+                  </div>
                   <div class="form-group form-animate-text" style="margin-top:40px !important;">
                     <input type="text" name="username" class="form-text" required>
                     <span class="bar"></span>
@@ -59,14 +54,15 @@ if ( isset($_SESSION['user_login']) && $_SESSION['user_login'] != '' ) {
                     <span class="bar"></span>
                     <label>Password</label>
                   </div>
-                  <label class="pull-left">
-                  <input type="checkbox" class="icheck pull-left" name="checkbox1"/> Remember me
-                  </label>
+                  <div class="form-group form-animate-text" style="margin-top:40px !important;">
+                    <input type="text" name="kode" class="form-text" required>
+                    <span class="bar"></span>
+                    <label>Register Code</label>
+                  </div>
                   <input type="submit" class="btn col-md-12" value="LOGIN"/>
               </div>
                 <div class="text-center" style="padding:5px;">
-                    <a href="forgotpass.html">Forgot Password </a>
-                    <a href="reg.html">| Signup</a>
+                    <a href="login.php">| SignIn</a>
                 </div>
           </div>
         </form>

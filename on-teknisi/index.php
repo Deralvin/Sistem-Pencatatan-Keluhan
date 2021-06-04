@@ -5,13 +5,12 @@ session_start();
  * maka akan dibawa kembali kehalaman login atau menuju halaman yang seharusnya.
  */
 if ( !isset($_SESSION['user_login']) || 
-    ( isset($_SESSION['user_login']) && $_SESSION['user_login'] != 'admin' ) ) {
+    ( isset($_SESSION['user_login']) && $_SESSION['user_login'] != 'teknisi' ) ) {
 
-  header('location:./../login.php');
-  exit();
+	header('location:./../login.php');
+	exit();
 }
 ?>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -43,6 +42,14 @@ if ( !isset($_SESSION['user_login']) ||
   <!-- bootstrap wysihtml5 - text editor -->
   <link rel="stylesheet" href="assets/css/bootstrap3-wysihtml5.min.css">
 
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- Google Font -->
   <link rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 </head>
@@ -56,7 +63,7 @@ if ( !isset($_SESSION['user_login']) ||
       <!-- mini logo for sidebar mini 50x50 pixels -->
       <span class="logo-mini"><b>A</b>S</span>
       <!-- logo for regular state and mobile devices -->
-      <span class="logo-lg"><b>Halaman </b> Admin</span>
+      <span class="logo-lg"><b>Halaman </b> Teknisi</span>
     </a>
 
     <!-- Header Navbar: style can be found in header.less -->
@@ -99,7 +106,7 @@ if ( !isset($_SESSION['user_login']) ||
           <li class="dropdown user user-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
               <img src="assets/img/avatar5.png" class="user-image" alt="User Image">
-              <span class="hidden-xs">Admin</span>
+              <span class="hidden-xs">Teknisi</span>
             </a>
             <ul class="dropdown-menu">
               <!-- User image -->
@@ -107,8 +114,8 @@ if ( !isset($_SESSION['user_login']) ||
                 <img src="assets/img/avatar5.png" class="img-circle" alt="User Image">
 
                 <p>
-                  Admin - Freeplace
-                  <small>Member since Nov. 2021</small>
+                  Teknisi - Freeplace
+                  <small>Member since Nov. 2018</small>
                 </p>
               </li>
               </li>
@@ -133,64 +140,19 @@ if ( !isset($_SESSION['user_login']) ||
     </nav>
   </header>
   <!-- Left side column. contains the logo and sidebar -->
-  <aside class="main-sidebar">
-    <!-- sidebar: style can be found in sidebar.less -->
-    <section class="sidebar">
-      <!-- Sidebar user panel -->
-      <div class="user-panel">
-        <div class="pull-left image">
-          <img src="assets/img/avatar5.png" class="img-circle" alt="User Image">
-        </div>
-        <div class="pull-left info">
-          <p>Admin</p>
-          <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
-        </div>
-      </div>
-      <!-- search form -->
-      <form action="#" method="get" class="sidebar-form">
-        <div class="input-group">
-          <input type="text" name="q" class="form-control" placeholder="Search...">
-          <span class="input-group-btn">
-                <button type="submit" name="search" id="search-btn" class="btn btn-flat">
-                  <i class="fa fa-search"></i>
-                </button>
-              </span>
-        </div>
-      </form>
-      <!-- /.search form -->
-      <!-- sidebar menu: : style can be found in sidebar.less -->
-      <ul class="sidebar-menu" data-widget="tree">
-        <li class="header">MAIN NAVIGATION</li>
-          <ul class="treeview-menu">
-            <li><a href="pages/layout/top-nav.html"><i class="fa fa-circle-o"></i> Top Navigation</a></li>
-            <li><a href="pages/layout/boxed.html"><i class="fa fa-circle-o"></i> Boxed</a></li>
-            <li><a href="pages/layout/fixed.html"><i class="fa fa-circle-o"></i> Fixed</a></li>
-            <li><a href="pages/layout/collapsed-sidebar.html"><i class="fa fa-circle-o"></i> Collapsed Sidebar</a></li>
-          </ul>
-        </li>
-        <li><a href="index.php"><i class="fa fa-home"></i> <span>Dasboard</span></a></li>
-        <li><a href="keluhan.php"><i class="fa fa-book"></i> <span>Data Keluhan</span></a></li>
-        <li><a href="perbaikan.php"><i class="fa fa-folder"></i> <span>Data Perbaikan</span></a></li>
-        <li class="header">LABELS</li>
-        <li><a href="admin.php  ?>"><i class="fa fa-circle-o text-red"></i> <span>Data Admin</span></a></li>
-        <li><a href="teknisi.php"><i class="fa fa-circle-o text-yellow"></i> <span>Data Teknisi</span></a></li>
-        <li><a href="pelanggan.php"><i class="fa fa-circle-o text-aqua"></i> <span>Data Pelanggan</span></a></li>
-      </ul>
-    </section>
-    <!-- /.sidebar -->
-  </aside>
+  <?php include "template/sidebar.php" ?>
 
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Sistem Pencatatan Keluhan Pelanggan
+        Sistem Pencatatan Keluhan Pelanggan Berbasis Web
         <small>Freeplace</small>
       </h1>
       <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-freeplace"></i> Home</a></li>
-        <li class="active">Freeplacea</li>
+        <li><a href="#"><i class="fa fa-Freeplace"></i> Home</a></li>
+        <li class="active">Freeplace</li>
       </ol>
     </section>
 
@@ -210,6 +172,7 @@ if ( !isset($_SESSION['user_login']) ||
               </div>
             </div>
             <div class="box-body">
+            <div class="box-body">
              <b> Sistem Pencatatan Keluhan Pelanggan (Sipelupa)</b>, adalah sebuah startup di bidang sosial yang berfokus kepada pelayanan masyarakat yang dibangun oleh <b>Freeplace.com</b> dan ahli dengan bidang pengalaman yang tinggi. Dimulai dengan jasa pelayanan masyarakat freeplace menghadirkan beberapa
              fitur yang disediakan oleh kami diantaranya jasa keluhan yang terdaftar member pada kami
             </div><!-- /.box-body -->
@@ -218,9 +181,9 @@ if ( !isset($_SESSION['user_login']) ||
       </div><!-- /.content-wrapper -->
       <footer class="main-footer">
         <div class="pull-right hidden-xs">
-          <b>Freeplace </b>2021
+          <b>Freeplace </b>2018
         </div>
-        <strong>Copyright &copy; 2021 <a href="#">Sistem Pencatatan Keluhan Pelanggan</a>.</strong> All rights reserved.
+        <strong>Copyright &copy; 2018 <a href="#">Sistem Pencatatan Keluhan Pelanggan</a>.</strong> All rights reserved.
       </footer>
 
       <!-- Control Sidebar -->

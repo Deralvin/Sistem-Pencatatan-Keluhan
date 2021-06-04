@@ -108,11 +108,11 @@
             <ul class="dropdown-menu">
               <!-- User image -->
               <li class="user-header">
-                <img src="assets/img/avatar2.png" class="img-circle" alt="User Image">
+                <img src="assets/img/user2-160x160.jpg" class="img-circle" alt="User Image">
 
                 <p>
-                  Admin -Freeplace
-                  <small>Member since Nov. 2021</small>
+                  Admin - Freeplace
+                  <small>Member since Nov. 2018</small>
                 </p>
               </li>
               <!-- Menu Footer-->
