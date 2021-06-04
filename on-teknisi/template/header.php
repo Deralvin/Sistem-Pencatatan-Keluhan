@@ -7,31 +7,31 @@
 
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
 
-  <link rel="stylesheet" href="../tmplt/assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 
-  <link rel="stylesheet" href="../tmplt/assets/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/css/font-awesome.min.css">
 
-  <link rel="stylesheet" href="../tmplt/assets/css/ionicons.min.css">
+  <link rel="stylesheet" href="assets/css/ionicons.min.css">
 
-  <link rel="stylesheet" href="../tmplt/assets/css/jquery-jvectormap.css">
+  <link rel="stylesheet" href="assets/css/jquery-jvectormap.css">
 
-  <link rel="stylesheet" href="../tmplt/assets/css/AdminLTE.min.css">
+  <link rel="stylesheet" href="assets/css/AdminLTE.min.css">
 
-  <link rel="stylesheet" href="../tmplt/assets/css/_all-skins.min.css">
+  <link rel="stylesheet" href="assets/css/_all-skins.min.css">
 
-  <link rel="stylesheet" href="../tmplt/assets/css/morris.css">
+  <link rel="stylesheet" href="assets/css/morris.css">
   <!-- jvectormap -->
-  <link rel="stylesheet" href="../tmplt/assets/css/jquery-jvectormap.css">
+  <link rel="stylesheet" href="assets/css/jquery-jvectormap.css">
   <!-- Date Picker -->
-  <link rel="stylesheet" href="../tmplt/assets/css/bootstrap-datepicker.min.css">
+  <link rel="stylesheet" href="assets/css/bootstrap-datepicker.min.css">
   <!-- Daterange picker -->
-  <link rel="stylesheet" href="../tmplt/assets/css/daterangepicker.css">
+  <link rel="stylesheet" href="assets/css/daterangepicker.css">
   <!-- bootstrap wysihtml5 - text editor -->
-  <link rel="stylesheet" href="../tmplt/assets/css/bootstrap3-wysihtml5.min.css">
+  <link rel="stylesheet" href="assets/css/bootstrap3-wysihtml5.min.css">
 
     <!--Jika Tidak di download File Bootstrapnya silahkan gunakan link berikut-->
   <!-- <link rel="stylesheet" type="text/css" href="http://cdn.datatables.net/plug-ins/3cfcc339e89/integration/bootstrap/3/dataTables.bootstrap.css"> -->
-  <link rel="stylesheet" href="../tmplt/assets/css/dataTables.bootstrap.css">
+  <link rel="stylesheet" href="assets/css/dataTables.bootstrap.css">
   
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -41,7 +41,7 @@
   <![endif]-->
 
   <!-- jQuery 3 -->
-  <script src="../tmplt/assets/js/jquery.min.js"></script>
+  <script src="assets/js/jquery.min.js"></script>
   <!-- <script type="text/javascript" language="javascript" src="http://code.jquery.com/jquery-1.11.1.min.js"></script> -->
   <!-- <script type="text/javascript" language="javascript" src="http://cdn.datatables.net/1.10.4/js/jquery.dataTables.min.js"></script> -->
   <!-- <script type="text/javascript" language="javascript" src="http://cdn.datatables.net/plug-ins/3cfcc339e89/integration/bootstrap/3/dataTables.bootstrap.js"></script> -->

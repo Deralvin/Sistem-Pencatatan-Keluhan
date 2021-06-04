@@ -220,7 +220,8 @@ if ( !isset($_SESSION['user_login']) ||
         <div class="pull-right hidden-xs">
           <b>Freeplace </b>2021
         </div>
-        <strong>Copyright &copy; 2021 <a href="#">Sistem Pencatatan Keluhan Pelanggan</a>.</strong> All rights reserved.
+        <strong><a href="#">Sipelupa</a>.</strong> 
+    reserved.
       </footer>
 
       <!-- Control Sidebar -->
